@@ -7,14 +7,12 @@ namespace IterationStatements
     {
         static void Main(string[] args)
         {
-            //TODO
             //list is another collection of items of a type 
-            //with var List<int>numbers
+            //with var List<int>numbers (list is empty right now)
             var numbers = new List<int>();
             var i = 0;
             //Create a List called "numbers"
             //Create a variable of type int with an initializer of 0
-
 
 
             // Create a do-while loop
@@ -23,11 +21,10 @@ namespace IterationStatements
                 // Increment your variable by 1
                 // Then add your variable to "numbers"
                 i++;
-                numbers.Add(i);
+                numbers.Add(i); // populating list 
             }
             while (i < 100);
             // While your variable is less than 100
-
 
 
             // Create a while loop
@@ -58,9 +55,10 @@ namespace IterationStatements
             // and as long as i is greater than or equal to 0
             // Decrement i by 1
             // reads indicator then check condition, then runs code, then interator,repeat
+
             for (i = 199; i <= numbers.Count && i >= 0; --i)
             {
-                Console.WriteLine(numbers [i]);
+                Console.WriteLine(numbers[i]);
                 // Write to the console "numbers" at index i
             }
             Console.WriteLine(numbers.Count);
